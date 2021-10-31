@@ -7,15 +7,17 @@
 !/upload/image/no_image.jpg
 
 # Image Cache Files
-/upload/image/cache/*
-!/upload/image/cache/index.html
+upload/image/cache/*
+!upload/image/cache/index.html
 
 # System Cache Files
-/upload/system/storage/cache/*
-!/upload/system/storage/cache/index.html
+upload/system/storage/cache/*
+storage/cache/*
+!upload/system/storage/cache/index.html
 
 # Modification Files
 /upload/system/storage/modification/*
+storage/modification/*
 !/upload/system/storage/modification/index.html
 
 # Templates Files
@@ -24,22 +26,26 @@
 
 # Download Files
 /upload/system/storage/download/*
+storage/download/*
 !/upload/system/storage/download/index.html
 
 # Session Files
 /upload/system/storage/session/*
+storage/session/*
 !/upload/system/storage/session/index.html
 
 # Upload Files
 /upload/system/storage/upload/*
+storage/upload/*
 !/upload/system/storage/upload/index.html
 
-# Flags 
+# Flags
 # remove sharp char if you want to add flags to gitignore
 # /upload/flags/*
 
 # Log Files
 /upload/system/storage/logs/*
+storage/logs/*
 !/upload/system/storage/logs/index.html
 
 # If you want to ignore install file use following lines [on development mode]
@@ -58,3 +64,7 @@
 # IDE Project files
 /.idea
 /upload/.idea
+
+.docker/db_data
+upload/system/storage/vendor
+storage/vendor
