@@ -13,7 +13,6 @@ ENV XDEBUG_IDE_KEY=PHPSTORM
 ENV XDEBUG_PROFILER_ENABLE=1
 ENV XDEBUG_OUTPUT_DIR=/app/profiler_output_dir
 ENV php.upload_tmp_dir=var/tmp
-ENV php.disable_functions="exec, passthru, ini_get_all, parse_ini_file, php_uname, system, shell_exec, show_source, pcntl_exec, pcntl_exec, proc_open, popen, diskfreespace, disk_total_space, disk_total_space, fileperms, opendir, posix_getpwuid, posix_uname"
 #ENV PHP_DEBUGGER=blackfire
 #ENV BLACKFIRE_SERVER_ID=486a7501-02ea-4c09-a7af-cb76bce4a367
 #ENV BLACKFIRE_SERVER_TOKEN=7a9e3b114e8b1708d52540d2e579e93cdf54435e29c1edd72ba15cc4a17e2715

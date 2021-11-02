@@ -28,6 +28,7 @@ services:
     build: .docker/dev/php
     container_name: php_ocstore
     working_dir: /app
+    env_file: .env.dev
     volumes:
       - ./:/app
     depends_on:
@@ -45,8 +46,11 @@ services:
       MYSQL_DATABASE: oc_store
       MYSQL_USER: oc_store
       MYSQL_PASSWORD: oc_store
+    ports:
+      - "7777:3306"
     networks:
       - oc_store
+      - web
 
   phpmyadmin:
     image: 'phpmyadmin/phpmyadmin'
