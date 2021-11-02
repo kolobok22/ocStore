@@ -68,3 +68,5 @@ storage/logs/*
 .docker/db_data
 upload/system/storage/vendor
 storage/vendor
+
+.env.*
