@@ -1,43 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
---
--- Хост: db
--- Время создания: Ноя 02 2021 г., 19:25
--- Версия сервера: 5.7.33
--- Версия PHP: 7.4.20
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- База данных: `oc_store`
---
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `oc_auto_year`
---
-
-CREATE TABLE `oc_auto_year` (
-  `id` int(11) NOT NULL,
-  `value` varchar(255) NOT NULL,
-  `model` varchar(255) NOT NULL,
-  `brand` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `oc_auto_year`
---
-
 INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (1, '2020', 'mdx', 'acura'),
 (2, '2019', 'mdx', 'acura'),
@@ -1614,8 +1574,7 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (1573, '2013', 'express', 'chevrolet'),
 (1574, '2012', 'express', 'chevrolet'),
 (1575, '2011', 'express', 'chevrolet'),
-(1576, '2010', 'express', 'chevrolet');
-INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
+(1576, '2010', 'express', 'chevrolet'),
 (1577, '2009', 'express', 'chevrolet'),
 (1578, '2008', 'express', 'chevrolet'),
 (1579, '2007', 'express', 'chevrolet'),
@@ -3055,8 +3014,7 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (3013, '2018', 'fiesta', 'ford'),
 (3014, '2017', 'fiesta', 'ford'),
 (3015, '2016', 'fiesta', 'ford'),
-(3016, '2015', 'fiesta', 'ford');
-INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
+(3016, '2015', 'fiesta', 'ford'),
 (3017, '2014', 'fiesta', 'ford'),
 (3018, '2013', 'fiesta', 'ford'),
 (3019, '2012', 'fiesta', 'ford'),
@@ -4515,8 +4473,7 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (4472, '2009', 'qx56', 'infiniti'),
 (4473, '2008', 'qx56', 'infiniti'),
 (4474, '2007', 'qx56', 'infiniti'),
-(4475, '2006', 'qx56', 'infiniti');
-INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
+(4475, '2006', 'qx56', 'infiniti'),
 (4476, '2005', 'qx56', 'infiniti'),
 (4477, '2004', 'qx56', 'infiniti'),
 (4478, '2020', 'qx60', 'infiniti'),
@@ -5985,8 +5942,7 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (5941, '2012', 'citan', 'mercedes'),
 (5942, '2014', 'cl-klasse', 'mercedes'),
 (5943, '2013', 'cl-klasse', 'mercedes'),
-(5944, '2012', 'cl-klasse', 'mercedes');
-INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
+(5944, '2012', 'cl-klasse', 'mercedes'),
 (5945, '2011', 'cl-klasse', 'mercedes'),
 (5946, '2010', 'cl-klasse', 'mercedes'),
 (5947, '2009', 'cl-klasse', 'mercedes'),
@@ -7342,8 +7298,7 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (7297, '2016', 'combo', 'opel'),
 (7298, '2015', 'combo', 'opel'),
 (7299, '2014', 'combo', 'opel'),
-(7300, '2013', 'combo', 'opel');
-INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
+(7300, '2013', 'combo', 'opel'),
 (7301, '2012', 'combo', 'opel'),
 (7302, '2011', 'combo', 'opel'),
 (7303, '2010', 'combo', 'opel'),
@@ -8783,8 +8738,7 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (8737, '2003', 'baja', 'subaru'),
 (8738, '2002', 'baja', 'subaru'),
 (8739, '2016', 'brz', 'subaru'),
-(8740, '2015', 'brz', 'subaru');
-INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
+(8740, '2015', 'brz', 'subaru'),
 (8741, '2014', 'brz', 'subaru'),
 (8742, '2013', 'brz', 'subaru'),
 (8743, '2012', 'brz', 'subaru'),
@@ -10193,8 +10147,7 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (10146, '2019', 'arteon', 'volkswagen'),
 (10147, '2018', 'arteon', 'volkswagen'),
 (10148, '2016', 'beetle', 'volkswagen'),
-(10149, '2015', 'beetle', 'volkswagen');
-INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
+(10149, '2015', 'beetle', 'volkswagen'),
 (10150, '2014', 'beetle', 'volkswagen'),
 (10151, '2013', 'beetle', 'volkswagen'),
 (10152, '2012', 'beetle', 'volkswagen'),
@@ -11319,28 +11272,3 @@ INSERT INTO `oc_auto_year` (`id`, `value`, `model`, `brand`) VALUES
 (11271, '2019', 'profi', 'uaz'),
 (11272, '2018', 'profi', 'uaz'),
 (11273, '2017', 'profi', 'uaz');
-
---
--- Индексы сохранённых таблиц
---
-
---
--- Индексы таблицы `oc_auto_year`
---
-ALTER TABLE `oc_auto_year`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT для сохранённых таблиц
---
-
---
--- AUTO_INCREMENT для таблицы `oc_auto_year`
---
-ALTER TABLE `oc_auto_year`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11274;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

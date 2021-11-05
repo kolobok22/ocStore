@@ -1,42 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
---
--- Хост: db
--- Время создания: Ноя 02 2021 г., 19:24
--- Версия сервера: 5.7.33
--- Версия PHP: 7.4.20
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- База данных: `oc_store`
---
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `oc_auto_brand`
---
-
-CREATE TABLE `oc_auto_brand` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `name_short` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `oc_auto_brand`
---
-
 INSERT INTO `oc_auto_brand` (`id`, `name`, `name_short`) VALUES
 (1, 'Acura', 'acura'),
 (2, 'Alfa-Romeo', 'alfa-romeo'),
@@ -124,28 +85,3 @@ INSERT INTO `oc_auto_brand` (`id`, `name`, `name_short`) VALUES
 (84, 'ГАЗ', 'gaz'),
 (85, 'Ока', 'oka'),
 (86, 'УАЗ', 'uaz');
-
---
--- Индексы сохранённых таблиц
---
-
---
--- Индексы таблицы `oc_auto_brand`
---
-ALTER TABLE `oc_auto_brand`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT для сохранённых таблиц
---
-
---
--- AUTO_INCREMENT для таблицы `oc_auto_brand`
---
-ALTER TABLE `oc_auto_brand`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

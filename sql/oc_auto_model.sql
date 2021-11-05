@@ -1,43 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
---
--- Хост: db
--- Время создания: Ноя 02 2021 г., 19:24
--- Версия сервера: 5.7.33
--- Версия PHP: 7.4.20
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- База данных: `oc_store`
---
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `oc_auto_model`
---
-
-CREATE TABLE `oc_auto_model` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `name_short` varchar(255) NOT NULL,
-  `brand` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `oc_auto_model`
---
-
 INSERT INTO `oc_auto_model` (`id`, `name`, `name_short`, `brand`) VALUES
 (1, 'MDX', 'mdx', 'acura'),
 (2, 'RDX', 'rdx', 'acura'),
@@ -1162,28 +1122,3 @@ INSERT INTO `oc_auto_model` (`id`, `name`, `name_short`, `brand`) VALUES
 (1121, '3741*', '3741', 'uaz'),
 (1122, '3909* Фермер', '3909-fermer', 'uaz'),
 (1123, 'Профи', 'profi', 'uaz');
-
---
--- Индексы сохранённых таблиц
---
-
---
--- Индексы таблицы `oc_auto_model`
---
-ALTER TABLE `oc_auto_model`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT для сохранённых таблиц
---
-
---
--- AUTO_INCREMENT для таблицы `oc_auto_model`
---
-ALTER TABLE `oc_auto_model`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1124;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
