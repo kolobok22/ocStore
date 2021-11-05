@@ -12,4 +12,13 @@ COPY ./ /app
 WORKDIR /app
 RUN composer install
 
+RUN chmod 0755 storage/cache/ \
+    && chmod 0755 storage/logs/ \
+    && chmod 0755 storage/modification/ \
+    && chmod 0755 storage/session/ \
+    && chmod 0755 storage/upload/ \
+    && chmod 0755 upload/image/ \
+    && chmod 0755 upload/image/cache/ \
+    && chmod 0755 upload/image/catalog/ \
+
 EXPOSE 9000
