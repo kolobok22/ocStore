@@ -19,6 +19,6 @@ RUN chmod 0755 storage/cache/ \
     && chmod 0755 storage/upload/ \
     && chmod 0755 upload/image/ \
     && chmod 0755 upload/image/cache/ \
-    && chmod 0755 upload/image/catalog/ \
+    && chmod 0755 upload/image/catalog/
 
 EXPOSE 9000
