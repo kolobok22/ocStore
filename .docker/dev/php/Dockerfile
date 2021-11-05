@@ -34,4 +34,4 @@ RUN sed -i 's,xdebug.remote_enable = 1,,g' /opt/docker/etc/php/php.webdevops.ini
 #    && chmod 0755 upload/image/catalog/ \
 #    && chmod 0755 upload/config.php \
 #    && chmod 0755 upload/admin/config.php
-EXPOSE 80
+EXPOSE 9000
