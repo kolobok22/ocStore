@@ -8,7 +8,8 @@ ENV PHP_MAX_EXECUTION_TIME=2000
 ENV PHP_DISPLAY_ERRORS=off
 ENV php.upload_tmp_dir=var/tmp
 
-COPY ./upload /app/upload
+COPY ./ /app
+WORKDIR /app
 RUN composer install
 
 EXPOSE 9000
