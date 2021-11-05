@@ -9,5 +9,6 @@ ENV PHP_DISPLAY_ERRORS=off
 ENV php.upload_tmp_dir=var/tmp
 
 COPY ./upload /app/upload
+RUN composer install
 
 EXPOSE 9000
