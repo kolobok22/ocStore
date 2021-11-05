@@ -1,1 +1,10 @@
 tests/
+docker-compose.yml
+CHANGELOG.md
+CHANGELOG_AUTO.md
+Makefile
+README.md
+SOURCE.txt
+license.txt
+upgrade.txt
+sql
