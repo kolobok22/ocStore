@@ -1,4 +1,4 @@
-.PHONY: up down stop restart phpstan test build-stage build-prod
+.PHONY: up down stop restart build-prod
 
 up: docker-up
 down: docker-down
@@ -18,3 +18,8 @@ docker-up:
 
 docker-down:
 	docker-compose down --remove-orphans
+
+build-prod:
+	echo argument is $(version)
+	docker build -f .docker/prod/php/Dockerfile -t shop_php:$(version) -t shop_php:latest .
+	docker build -f .docker/prod/nginx/Dockerfile -t shop_nginx:$(version) -t shop_nginx:latest .
