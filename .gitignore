@@ -1,3 +1,6 @@
+images/*
+!images/.gitkeep
+
 # Config and Htaccess Files
 /upload/.htaccess
 
